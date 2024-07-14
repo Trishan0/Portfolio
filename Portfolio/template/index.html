@@ -1,96 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!--CSS Styles -->
-    <link rel="stylesheet" href="../static/style.css" />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Favicons -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="../static/icons/apple-touch-icon.png"
+  <!--CSS Styles -->
+  <link rel="stylesheet" href="../static/style.css" />
+
+  <!-- Favicons -->
+  <link
+    rel="apple-touch-icon"
+    sizes="180x180"
+    href="../static/icons/apple-touch-icon.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="../static/icons/favicon-32x32.png"
     />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="../static/icons/favicon-32x32.png"
-    />
 
-    <!-- Animate CSS CDN -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <title>Trishan Fernando | Web Developer</title>
-  </head>
+   <!-- Animate CSS CDN -->
+  <link 
+  rel="stylesheet" 
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" 
+  />
+  <title>Trishan Fernando</title>
+</head>
 
-  <body>
-    
-    <!-- Navbar -->
-    <nav>
-        <h1>Trishan Fernando</h1>
-        <ul class="navigation">
-          <li><a href="#about" class="nav-link">About</a></li>
-          <li><a href="#skills" class="nav-link">Skills</a></li>
-          <li><a href="#projects" class="nav-link">Projects</a></li>
-          <li><a href="#contact" class="nav-link">Contact</a></li>
-        </ul>
-        <button class="burger-menu" id="burger-menu">
-          <ion-icon class="bars" name="menu-outline"></ion-icon>
-        </button>
+<body>
+  <!-- Navbar -->
+  <nav class="navigation" id="navigation">
+    <h1>Trishan Fernando</h1>
+    <ul class="navigation">
+      <li><a href="#about" class="nav-links">About</a></li>
+      <li><a href="#skills" class="nav-links">Skills</a></li>
+      <li><a href="#projects" class="nav-links">Projects</a></li>
+      <li><a href="#contact" class="nav-links">Contact</a></li>
+      <button class="burger-menu" id="burger-menu">
+        <ion-icon class="bars" name="menu-outline"></ion-icon>
+      </button>
+    </ul>
   </nav>
 
     <!-- Hero Section -->
 
     <section class="hero" id="about">
-        <img 
-        src="../static/images/wfh_1.svg" 
-        alt="trishan-fernando"
-        loading="lazy"
-        class="hero-img"
+      <img 
+      src="../static/images/wfh_1.svg" 
+      alt="trishan-fernando"
+      loading="lazy"
+      class="hero-img"
+      />
+    <div class="bio animate__animated animate__shakeX">
+      <h2 class="bio-title">About Me</h2>
+      <p class="bio-text">
+        Lorem ipsuheem dolor sit amet, consectetur adipisicing elit. Mollitia sed
+        dolorem fugit sapiente porro veniam pariatur dolore nostrum delectus
+        inventore tempore minus nemo, iste ullam illo laboriosam maiores
+        repudiandae quos!
+      </p>
+    </div>
+
+
+    </div>
+  </section>
+
+
+  </section>
+
+
+
+  <!-- Skill Section -->
+   
+  <section class="skills" id="skills">
+    <h2 class="skill-header">My Skills</h2>
+    <div class="skill-wrapper">
+      <div class="fisrt-set animate__animated animate__pulse">
+        <img
+        src="../static/icons/icons8-python.svg"
+          alt="Python"           
+          loading="lazy"
+          class="icon icon-card"
         />
+        <img
+          src="../static/icons/icons8-html-5.svg"
+          alt="HTML"
+          loading="lazy"
+          class="icon icon-card"
+        />
+        <img
+          src="../static/icons/icons8-css3.svg"
+          alt="CSS"
+          loading="lazy"
+          class="icon icon-card"
+        />
+      </div>
+      <div class="second-set animate__animated animate__pulse">
+        <img
+          src="../static/icons/icons8-javascript.svg"
+          alt="JavaScript"
+          loading="lazy"
+          class="icon icon-card"
+        />
+        <img
+          src="../static/icons/icons8-c.svg"
+          alt="C"
+          loading="lazy"
+          class="icon icon-card"
+        />
+        <img
+          src="../static/icons/icons8-git.svg"
+          alt="Git"
+          loading="lazy"
+          class="icon icon-card"
+        />
+       </div>
+    </div>
+  </section>
 
-        <div class="bio animate__animated animate__shakeX">
-            <h2 class="bio-title">About Me</h2>
-            <p class="bio-text">
-              Lorem ipsuheem dolor sit amet, consectetur adipisicing elit. Mollitia sed
-              dolorem fugit sapiente porro veniam pariatur dolore nostrum delectus
-              inventore tempore minus nemo, iste ullam illo laboriosam maiores
-              repudiandae quos!
-            </p>
+  <!-- Contact-Section -->
+  <section class="contact" id="contact">
+    <h2>Get in Touch With Me</h2>
+    <div class="contact-container">
+      <div class="contact-form">
+        <form action="https://formspree.io/f/xvgpodgd" method="POST">
+          <div class="form-control">
+            <label for="name">Name</label>
+            <input 
+            type="text" 
+            name="sender-name" 
+            id="name"
+            placeholder="Enter Your Name"
+            class="input-field"
+            required
+            />
           </div>
-    </section>
 
-    <!-- More about -->
+          <div class="form-control">
+            <label for="email">Email</label>
+            <input 
+            type="email" 
+            name="sender-email" 
+            id="email"
+            placeholder="Enter Your Email"
+            class="input-field"
+            required
+            />
+          </div>
 
-    <!-- Skills section -->
+          <div class="form-control">
+            <label for="message">Message</label>
+            <textarea 
+            id="message"
+            name="message"
+            placeholder="Enter your message"
+            class="input-field"
+            rows="10"
+            cols="60"
+            required></textarea>
+          </div>
 
-    <!-- Projects section -->
+          <input
+          type="submit"
+          value="Submit"
+          id="submit-btn"
+          class="submit-btn"
+          />
+        </form> 
+      </div>
+    </div>
+  </section>
 
-    <!-- Contact section -->
 
-    <!-- Social accounts - Fixed to the right -->
+  <!-- Social accounts - Fixed to the right -->
 
-    <!-- Scroll to top -->
+  <div class="socials">
+    <a href="https://x.com/Trishan_s" target="_blank">
+      <img 
+      src="../static/icons/icons8-twitter-circled.gif" 
+      alt="Twitter" 
+      loading="lazy"
+      class="socicon"
+      ></a>
+      <a href="#" target="_blank">
+        <img 
+        src="../static/icons/icons8-linkedin-circled.gif" 
+        alt="LinkedIn" 
+        loading="lazy"
+        class="socicon"
+        ></a>
+        <a href="#" target="_blank">
+          <img 
+          src="../static/icons/icons8-github.gif" 
+          alt="GitHub" 
+          loading="lazy"
+          class="socicon"
+          ></a>
+  </div>
 
-    <!-- Footer section -->
+  <!-- Scroll to top -->
+  <i class="scroll-up" id="scroll-up"
+  ><img
+    src="../static/icons/icons8-upward-arrow.gif"
+    class="socicon up-arrow"
+    alt="scroll-up"
+/></i>
+   
 
-    <!-- Website scripts -->
-    <script src="../static/script.js"></script>
+  <!-- Footer -->
+  <footer>
+    <p class="copy">&copy;Copyright 2024</p>
+    <p class="copy">
+     Build With &#x2661; by
+     <a href="https://x.com/Trishan_s" target="_blank">Trishan Fernando</a>
+    </p>
+  </footer>
 
-    <!-- Ion icons scripts -->
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
-  </body>
-</html
+
+  <script src="../static/script.js"></script>
+
+  <!-- Ion icons scripts -->
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
